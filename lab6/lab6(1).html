@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>WEB</title>
+    <style>
+        input,select{
+            margin-left:10px;
+            border: none;
+            border-bottom: 2px solid #60B9CE;
+            padding-left:5px;
+        }
+        fieldset{
+            margin:10px;
+            border-color:#60B9CE;
+            background-color:#ffecdb;
+            border-radius:5px;
+            width:600px;
+        }
+        legend,.h {
+            background-color: rgba(65, 96, 213, 0.8);
+            padding:5px;
+            margin:3px;
+            color:white;
+            border-radius:5px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        span{
+            margin:5px;
+        }
+        #fine{
+            color:#60B9CE;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            input[type='range'] {
+                overflow: hidden;
+                width: 80px;
+                -webkit-appearance: none;
+                background-color: rgba(134, 134, 134, 0.52);
+                border:none;
+            }
+            input[type='range']::-webkit-slider-runnable-track {
+                height: 10px;
+                -webkit-appearance: none;
+                color: #599abd;
+                margin-top: -1px;
+            }
+
+            input[type='range']::-webkit-slider-thumb {
+                width: 10px;
+                -webkit-appearance: none;
+                height: 10px;
+                cursor: ew-resize;
+                background: #434343;
+                box-shadow: -80px 0 0 80px #60B9CE;
+            }
+
+        }
+        input[type='submit'],input[type='reset'], input[type="button"] {
+            padding:10px;
+            background-color: rgba(217, 246, 243, 0.87);
+            border-radius:5px;
+            margin-top:10px;
+        }
+        input:required{
+            border-color:red;
+        }
+
+        input:required:invalid{
+            border-color: red;
+        }
+
+        input:required:valid{
+            border-color: #11c7e0;
+        }
+        table{
+            margin-top:30px;
+
+        }
+        .ttt td{
+            text-align:center;
+            background-color:#60B9CE;
+            border: 1px dashed #333;
+            color:white;
+            font-family: 'Lobster', Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body link="#003366">
+<header class="header">
+    <div class="layer1"><h1>Ринейская Владислава Владимировна</h1></div>
+    <div class="layer2"><h1>Ринейская Владислава Владимировна</h1></div>
+</header>
+
+<div class="menu">
+    <nav class="navigation">
+        <div class="nav_block">
+            <ul>
+                <li><a href="../lab1/lab1(1).html" style="color: #999966">Форматирование</a></li>
+                <li><a href="../lab2/lab2(1).html" style="color: #999966">CSS</a></li>
+                <li><a href="../lab3/lab3(1).html" style="color: #999966">DOM</a></li>
+                <li><a href="../lab4/lab4(1).html" style="color: #999966">Кроссворд</a></li>
+                <li><a href="../lab5/lab5(1).html" style="color: #999966">String</a></li>
+                <li><a href="#" style="color: #999966">Формы</a></li>
+                <li><a href="../lab7/lab7(1).html" style="color: #999966">Data</a></li>
+                <li><a href="../lab8/lab8(1).html" style="color: #999966">Object</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo_picture">
+        <img src="../img/logo.png" class="logo" alt="Логотип" width="170"/>
+    </div>
+</div>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Программирование форм</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<main class="main" style="text-align: left">
+    <p class="h" style="font-size:1.3em; text-align:center; margin-left:10px; width:590px;">Сведения о продажах в книжном магазине</p>
+    <form name="form">
+        <fieldset>
+            <legend>Книги</legend>
+            <div class="input_element">
+                <label for="knowledge_field">Область знаний</label>
+                <input id="knowledge_field" name="knowledge_field" type="text" list="field1" autofocus required>
+                <datalist id="field1">
+                    <select>
+                        <option value="Математика"></option>
+                        <option value="Физика"></option>
+                        <option value="Информатика"></option>
+                        <option value="Теоретическая механика"></option>
+                        <option value="Машиностроение"></option>
+                        <option value="Экология и безопасность"></option>
+                        <option value="Медицина"></option>
+                        <option value="Педагогические науки"></option>
+                        <option value="Гуманитарные науки"></option>
+                        <option value="Культура и искусство"></option>
+                    </select>
+                </datalist>
+            </div>
+            <div class="input_element">
+            <label for="title">Название</label>
+            <input id="title" name="title" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Война и Мир" required >
+            </div>
+            <div class="input_element">
+                <label for="author">Автор</label>
+                <input id="author" name="author" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Толстой Л.Н." required >
+            </div>
+            <div class="input_element">
+                <label for="release_year">Год выпуска</label>
+                <input id="release_year" type="number" min="1900" max="2021">
+            </div>
+            <div class="input_element">
+                <label for="book_price">Цена</label>
+                <input id="book_price" type="number" min="1" max="1000" required>
+            </div>
+
+            <fieldset style="width:500px;">
+                <legend>Дополнительная информация</legend>
+                <div  class="input_element">
+                    <input type=checkbox id="cb0"><span id="sp0"> Книга имеет возрастное ограничение</span><br>
+                    <input type=checkbox id="cb1"><span id="sp1"> В наличии имеется переиздание</span><br>
+                    <input type=checkbox id="cb2"><span id="sp2"> На книгу распространяются условия акции</span><br>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Поступление</legend>
+            <div class="input_element">
+                <label for="title1">Название</label>
+                <input id="title1" name="title1" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Война и Мир" required >
+            </div>
+            <div class="input_element">
+                <label for="author1">Автор</label>
+                <input id="author1" name="author1" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Толстой Л.Н." required >
+            </div>
+            <div class="input_element">
+                <label for="copies">Количество</label>
+                <input id="copies" name="copies" type="number" min="1" required>
+            </div>
+            <div class="input_element">
+                <label for="receipt_date">Дата поступления</label>
+                <input id="receipt_date" type="date" name="receipt_date" required>
+            </div>
+            <fieldset style="width:200px;">
+                <legend>Целевая аудитория</legend>
+                <div class="input_element">
+                    <input type=radio id="ex0" name=aud_ex value="Студенты" checked>
+                    <label for="ex0">Студенты, ученики</label><br />
+                    <input type=radio id="ex1" name=aud_ex value="Преподаватели">
+                    <label for=ex1>Преподаватели</label><br />
+                    <input type=radio id="ex2" name=aud_ex value="Специалисты">
+                    <label for=ex2>Специалисты</label><br />
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Продажа</legend>
+            <div class="input_element">
+                <label for="title2">Название</label>
+                <input id="title2" name="title2" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Война и Мир" required >
+            </div>
+            <div class="input_element">
+                <label for="author2">Автор</label>
+                <input id="author2" name="author2" pattern="([А-ЯЁ][а-яё]+[\-]?){1,}" placeholder="Толстой Л.Н." required >
+            </div>
+            <div class="input_element">
+                <label for="copies1">Количество</label>
+                <input id="copies1" type="range" min="1" max="20" value="1" onchange="showValue(this.value)"><span id="range">1</span><span>экземпляров(а)</span>
+            </div>
+            <div class="input_element">
+                <label for="receipt_date1">Дата продажи</label>
+                <input id="receipt_date1" type="date" name="receipt_date1" required>
+            </div>
+            <div class="input_element">
+                <label for="check_number"> Номер чека</label>
+                <input type=text size=40 id="check_number" name="check_number" placeholder="например #000001" required>
+            </div>
+            <label for="messnumber" style="margin-left:10px;">Примечания</label>
+            <div class="input_element">
+                <textarea id="messnumber" name="messnumber" rows=5 cols=50></textarea>
+            </div>
+        </fieldset>
+        <div class="input_element">
+            <label for="search">Поиск по сайту</label>
+            <input id="search" name="search" type="search" placeholder= "введите информацию о книге" style="width: 300px">
+        </div>
+        <input type="submit" value="Отправить">
+        <input type="button" value="Просмотреть данные в таблицах" onclick="if (flag) createTables(); flag=0; fillTables();">
+        <input type="button" value="Удалить последние записи в таблицах" onclick="if (!flag) remove_el(); if(count==0){ for(var i=0;i<2;i++,remove_el());el1.remove();el2.remove();el3.remove(); flag=1;count=0;}">
+    </form>
+    <div id="table1" style="padding-top: 20px"></div>
+    <div id="table2"></div>
+    <div id="table3"></div>
+</main>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Программирование форм</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<footer class="footer">
+    <a href="mailto:vld.rineyskaya@gmail.com">vld.rineyskaya@gmail.com</a><br/>
+    <p>© Ринейская Владислава, 2021</p>
+</footer>
+<script src="../js/lab6(1).js"></script>
+</body>
+</html>

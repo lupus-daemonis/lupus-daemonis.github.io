@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>WEB</title>
+    <style>
+        input,select{
+            margin-left:10px;
+            border: none;
+            border-bottom: 2px solid #60B9CE;
+            padding-left:5px;
+        }
+        fieldset{
+            margin:10px;
+            border-color:#60B9CE;
+            background-color:#ffecdb;
+            border-radius:5px;
+            width:600px;
+        }
+        legend,.h {
+            background-color: rgba(65, 96, 213, 0.8);
+            padding:5px;
+            margin:3px;
+            color:white;
+            border-radius:5px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        span{
+            margin:5px;
+        }
+        #fine{
+            color:#60B9CE;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            input[type='range'] {
+                overflow: hidden;
+                width: 80px;
+                -webkit-appearance: none;
+                background-color: rgba(134, 134, 134, 0.52);
+                border:none;
+            }
+            input[type='range']::-webkit-slider-runnable-track {
+                height: 10px;
+                -webkit-appearance: none;
+                color: #599abd;
+                margin-top: -1px;
+            }
+
+            input[type='range']::-webkit-slider-thumb {
+                width: 10px;
+                -webkit-appearance: none;
+                height: 10px;
+                cursor: ew-resize;
+                background: #434343;
+                box-shadow: -80px 0 0 80px #60B9CE;
+            }
+
+        }
+        input[type='submit'],input[type='reset'], input[type="button"] {
+            padding:10px;
+            background-color: rgba(217, 246, 243, 0.87);
+            border-radius:5px;
+            margin-top:10px;
+        }
+        input:required{
+            border-color:red;
+        }
+
+        input:required:invalid{
+            border-color: red;
+        }
+
+        input:required:valid{
+            border-color: #11c7e0;
+        }
+        table{
+            margin-top:30px;
+
+        }
+        .ttt td{
+            text-align:center;
+            background-color:#60B9CE;
+            border: 1px dashed #333;
+            color:white;
+            font-family: 'Lobster', Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        article {
+            width: 99.7%;
+        }
+
+        [required] {
+            border-color: red;
+        }
+
+
+        table, tr, td, th {
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.29);
+            width: 130px;
+        }
+
+        table {
+            width: 99%
+        }
+    </style>
+</head>
+<body link="#003366">
+<header class="header">
+    <div class="layer1"><h1>Ринейская Владислава Владимировна</h1></div>
+    <div class="layer2"><h1>Ринейская Владислава Владимировна</h1></div>
+</header>
+
+<div class="menu">
+    <nav class="navigation">
+        <div class="nav_block">
+            <ul>
+                <li><a href="../lab1/lab1(1).html" style="color: #999966">Форматирование</a></li>
+                <li><a href="../lab2/lab2(1).html" style="color: #999966">CSS</a></li>
+                <li><a href="../lab3/lab3(1).html" style="color: #999966">DOM</a></li>
+                <li><a href="../lab4/lab4(1).html" style="color: #999966">Кроссворд</a></li>
+                <li><a href="../lab5/lab5(1).html" style="color: #999966">String</a></li>
+                <li><a href="../lab6/lab6(1).html" style="color: #999966">Формы</a></li>
+                <li><a href="../lab7/lab7(1).html" style="color: #999966">Data</a></li>
+                <li><a href="#" style="color: #999966">Object</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo_picture">
+        <img src="../img/logo.png" class="logo" alt="Логотип" width="170"/>
+    </div>
+</div>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Пользовательские объекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<main class="main" style="text-align: left">
+    <article>
+    <form>
+        <fieldset>
+            <legend>Студенты</legend>
+            <div style="margin-top: 5px; margin-left: 10px">
+                <label>Фамилия</label>
+                <input type="text" id="fn">
+            </div>
+            <div style="margin-top: 5px; margin-left: 10px">
+                <label>Группа</label>
+                <input type="text" id="gr">
+            </div>
+            <div style="margin-top: 5px; margin-left: 10px">
+                <label>Паскаль</label>
+                <input type="number" min="0" max="10" step="1" id="a" >
+            </div>
+            <div style="margin-top: 5px; margin-left: 10px">
+                <label>Си</label>
+                <input type="number" min="0" max="10" step="1" id="v">
+            </div>
+            <div style="margin-top: 5px; margin-left: 10px">
+                <label>Ассемблер</label>
+                <input type="number" min="0" max="10" step="1" id="b">
+            </div>
+            <div style="margin-top: 5px; margin-left: 10px; margin-bottom: 10px">
+                <label>Delphi</label>
+                <input type="number" min="0" max="10" step="1" id="s">
+            </div>
+        </fieldset>
+        <input type="button" value="Добавить" style="margin-left: 3px; margin-top: 3px;" id="b1" disabled>
+        <br>
+        <input type="text" id="search" style="margin-left: 3px; margin-top: 3px;">
+        <input type="button" value="Поиск" style="margin-left: 3px; margin-top: 3px;" id="b2" disabled>
+        <br>
+        <input type="button" value="Сортировать" style="margin-left: 3px; margin-top: 3px;" id="b3">
+        <br>
+        <input type="button" value="Просмотр" style="margin-left: 3px; margin-top: 3px;" id="b4">
+        <input type="button" value="Просмотр (Положительная оценка по всем предметам)" style="margin-left: 3px; margin-top: 3px;" id="b5">
+    </form>
+    <table id="t1">
+        <tr>
+            <th>Фамилия</th>
+            <th>Группа</th>
+            <th>Паскаль</th>
+            <th>Си</th>
+            <th>Ассемблер</th>
+            <th>Delphi</th>
+        </tr>
+    </table>
+    </article>
+</main>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Пользовательские объекты</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<footer class="footer">
+    <a href="mailto:vld.rineyskaya@gmail.com">vld.rineyskaya@gmail.com</a><br/>
+    <p>© Ринейская Владислава, 2021</p>
+</footer>
+<script src="../js/lab8(1).js"></script>
+<script>
+    obj(document.getElementsByTagName('article')[0]);
+</script>
+</body>
+</html>

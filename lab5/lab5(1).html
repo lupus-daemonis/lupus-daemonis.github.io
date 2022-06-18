@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>WEB</title>
+</head>
+<body link="#003366">
+<header class="header">
+    <div class="layer1"><h1>Ринейская Владислава Владимировна</h1></div>
+    <div class="layer2"><h1>Ринейская Владислава Владимировна</h1></div>
+</header>
+
+<div class="menu">
+    <nav class="navigation">
+        <div class="nav_block">
+            <ul>
+                <li><a href="../lab1/lab1(1).html" style="color: #999966">Форматирование</a></li>
+                <li><a href="../lab2/lab2(1).html" style="color: #999966">CSS</a></li>
+                <li><a href="../lab3/lab3(1).html" style="color: #999966">DOM</a></li>
+                <li><a href="../lab4/lab4(1).html" style="color: #999966">Кроссворд</a></li>
+                <li><a href="#" style="color: #999966">String</a></li>
+                <li><a href="../lab6/lab6(1).html" style="color: #999966">Формы</a></li>
+                <li><a href="../lab7/lab7(1).html" style="color: #999966">Data</a></li>
+                <li><a href="../lab8/lab8(1).html" style="color: #999966">Object</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="logo_picture">
+        <img src="../img/logo.png" class="logo" alt="Логотип" width="170"/>
+    </div>
+</div>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Динамические стили и анимация</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<main class="main">
+    <button class="string_btn" id="btn_1" onclick="Hide()">Только заголовки</button>
+    <button class="string_btn" id="btn_2" onclick="Show()">Заголовки и содержимое</button>
+
+    <div class="block_string">
+        <h1 id="change_color_string">Меняющийся цвет</h1>
+        <h2 id="text_1">В миску разбиваем яйцо, немного взбиваем венчиком. Добавляем 1 стакан тёплого кефира и 0,5 чайной ложки пищевой соды. Сода прекрасно гасится кефиром, и масса становится пышной и увеличивается в объеме. Полученную массу немного подсаливаем, буквально одну щепотку.</h2>
+    </div>
+
+    <div class="block_string">
+        <h1 id="print_text" style="color: red"></h1>
+        <h2 id="text_2" >С помощью сита просеиваем муку. Тесто должно быть не слишком жидкое, но и не густое. В граммах - 220-250 г (примерно 1,5 стакана). На разогретую сковороду с растительным маслом выкладываем тесто столовой ложкой. Масла, кстати, нужно довольно много.</h2>
+    </div>
+
+    <div class="block_string" >
+        <h1 style="color: blue"><marquee id="ticker" width="350" scrollamount="10" hspace="100" vspace="10">Бегущая строка</marquee></h1>
+        <h2 id="text_3" >Жарим оладьи на среднем огне до образования аппетитной корочки с двух сторон. Это примерно по 2-3 минуты на каждую сторону. Готовые оладушки на кефире выкладываем на бумажное полотенце. Делаем это для того, чтобы впиталось лишнее масло после жарки.
+            Как только оладьи немного остынут, можно приступать к чаепитию!</h2>
+    </div>
+
+    <div class="block_string" >
+        <img src="../img/meme_cat1.jpg" onmousemove="this.src='../img/meme_cat2.jpg'" onmouseout="this.src='../img/meme_cat1.jpg'" width="400" height="500">
+    </div>
+
+    <div class="block_string">
+        <img src="../img/oladushki.jpg" width="1000" left="600" id="img" onclick="changeSize()">
+    </div>
+</main>
+
+<div class="submenu">
+    <nav class="subnavigation">
+        <div class="subnav_block">
+            <ul>
+                <li><a href="#">Динамические стили и анимация</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <footer class="footer">
+        <a href="mailto:vld.rineyskaya@gmail.com">vld.rineyskaya@gmail.com</a><br/>
+        <p>© Ринейская Владислава, 2021</p>
+    </footer>
+<script src="../js/lab5(1).js"></script>
+</body>
+</html>
